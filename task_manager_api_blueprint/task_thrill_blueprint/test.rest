@@ -1,0 +1,36 @@
+### Register a new user
+POST http://localhost:8000/auth/register/
+Content-Type: application/json
+
+{
+  "username": "Felix",
+  "password": "1234",
+  "email": "felix@example.com"
+}
+
+### Login as the user to get the token
+POST http://localhost:8000/auth/login/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+# Create a new task (must be authenticated)
+###
+POST http://localhost:8000/api/tasks/create/
+Content-Type: application/json
+Authorization: Token 114621792dbd169e3927cb3af459f85a2e3f63f6
+
+{
+  "title": "Complete Django project",
+  "description": "Create a simple task manager",
+  "due_date": "2024-12-30T00:00:00Z",
+  "completed": false
+}
+
+# Get all tasks (must be authenticated)
+###
+GET http://localhost:8000/api/tasks/
+Authorization: Token 114621792dbd169e3927cb3af459f85a2e3f63f6

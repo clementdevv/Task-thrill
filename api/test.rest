@@ -1,0 +1,59 @@
+### Sign up endpoint
+POST http://127.0.0.1:8000/api/signup/
+Content-Type: application/json
+
+{
+  "username": "clementdevv",
+  "email": "clementdevv@gmail.com",
+  "password": "sec!",
+  "first_name": "clement",
+  "last_name": "devv"
+}
+
+###
+
+### Log in endpoint
+POST http://127.0.0.1:8000/api/login/
+Content-Type: application/json
+
+{
+  "email": "clementdevv@gmail.com",
+  "password": "sec!"
+}
+
+### create task
+POST http://127.0.0.1:8000/api/tasks/create/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM4Mzg2LCJpYXQiOjE3MzY2Mzc0ODYsImp0aSI6ImMyYjI3MjA0YWY4MTQzOWM5OTZlY2RiN2IyNjJhYjg5IiwidXNlcl9pZCI6MX0.d4T9tufzIpHScY1svv4uv4gPJFuUn5GJpqhm28d_93s
+
+{
+  "title": "Sample Task",
+  "description": "This is a test task.",
+  "priority": "low",
+  "start_time": "2025-01-12 09:00:00",  
+  "end_time": "2025-01-15 17:00:00" 
+}
+
+###view all tasks
+GET http://127.0.0.1:8000/api/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM2Mzc1LCJpYXQiOjE3MzY2MzU0NzUsImp0aSI6Ijc0M2YxODM4Nzk1ZTRmMjc4ZjYxMTUyNWJjOWQ3NTczIiwidXNlcl9pZCI6MX0.NHrrH8ejiSxVa9PiHm_Wn15EA-IP-V_Mx3d_j3LJm_4
+
+###update tasks
+PUT http://127.0.0.1:8000/api/tasks/6/update/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM4Mzg2LCJpYXQiOjE3MzY2Mzc0ODYsImp0aSI6ImMyYjI3MjA0YWY4MTQzOWM5OTZlY2RiN2IyNjJhYjg5IiwidXNlcl9pZCI6MX0.d4T9tufzIpHScY1svv4uv4gPJFuUn5GJpqhm28d_93s
+
+{
+  "title": "Work",
+  "description": "Got to work",
+   "priority": "high",
+  "start_time": "2025-02-12 09:00:00",  
+  "end_time": "2025-02-15 17:00:00"
+}
+
+###delete tasks
+DELETE http://127.0.0.1:8000/api/tasks/2/delete/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM2Mzc1LCJpYXQiOjE3MzY2MzU0NzUsImp0aSI6Ijc0M2YxODM4Nzk1ZTRmMjc4ZjYxMTUyNWJjOWQ3NTczIiwidXNlcl9pZCI6MX0.NHrrH8ejiSxVa9PiHm_Wn15EA-IP-V_Mx3d_j3LJm_4
+
