@@ -24,7 +24,7 @@ Content-Type: application/json
 ### create task
 POST http://127.0.0.1:8000/api/tasks/create/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM4Mzg2LCJpYXQiOjE3MzY2Mzc0ODYsImp0aSI6ImMyYjI3MjA0YWY4MTQzOWM5OTZlY2RiN2IyNjJhYjg5IiwidXNlcl9pZCI6MX0.d4T9tufzIpHScY1svv4uv4gPJFuUn5GJpqhm28d_93s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
 
 {
   "title": "Sample Task",
@@ -37,12 +37,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###view all tasks
 GET http://127.0.0.1:8000/api/tasks/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM2Mzc1LCJpYXQiOjE3MzY2MzU0NzUsImp0aSI6Ijc0M2YxODM4Nzk1ZTRmMjc4ZjYxMTUyNWJjOWQ3NTczIiwidXNlcl9pZCI6MX0.NHrrH8ejiSxVa9PiHm_Wn15EA-IP-V_Mx3d_j3LJm_4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
 
 ###update tasks
-PUT http://127.0.0.1:8000/api/tasks/6/update/
+PUT http://127.0.0.1:8000/api/tasks/4/update/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM4Mzg2LCJpYXQiOjE3MzY2Mzc0ODYsImp0aSI6ImMyYjI3MjA0YWY4MTQzOWM5OTZlY2RiN2IyNjJhYjg5IiwidXNlcl9pZCI6MX0.d4T9tufzIpHScY1svv4uv4gPJFuUn5GJpqhm28d_93s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
 
 {
   "title": "Work",
@@ -53,7 +53,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 }
 
 ###delete tasks
-DELETE http://127.0.0.1:8000/api/tasks/2/delete/
+DELETE http://127.0.0.1:8000/api/tasks/4/delete/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NjM2Mzc1LCJpYXQiOjE3MzY2MzU0NzUsImp0aSI6Ijc0M2YxODM4Nzk1ZTRmMjc4ZjYxMTUyNWJjOWQ3NTczIiwidXNlcl9pZCI6MX0.NHrrH8ejiSxVa9PiHm_Wn15EA-IP-V_Mx3d_j3LJm_4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
 
