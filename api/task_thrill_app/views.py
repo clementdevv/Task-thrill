@@ -96,8 +96,8 @@ class UpdateTaskView(APIView):
             return Response({"error": "Task not found."}, status=status.HTTP_404_NOT_FOUND)
 
         # Make sure the task is pending before updating it.
-        if task.status != "pending":
-            return Response({"error": "Cannot update a task that is not pending."}, status=status.HTTP_400_BAD_REQUEST)
+        # if task.status != "pending":
+        #     return Response({"error": "Cannot update a task that is not pending."}, status=status.HTTP_400_BAD_REQUEST)
 
         # Update the task using the serializer
         serializer = TaskSerializer(task, data=request.data, partial=True)

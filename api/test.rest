@@ -24,7 +24,7 @@ Content-Type: application/json
 ### create task
 POST http://127.0.0.1:8000/api/tasks/create/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njk5Mzg5LCJpYXQiOjE3MzY2OTg0ODksImp0aSI6Ijg0NGQyZmNlNTE2NDRiZDc5MjdiOTU5MzBjNGM4Mzk4IiwidXNlcl9pZCI6MX0.7YQxvsQRtrOqyWfudAgAEQlRMIoXuq8EkcumWZRVDjw
 
 {
   "title": "Sample Task",
@@ -37,23 +37,23 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###view all tasks
 GET http://127.0.0.1:8000/api/tasks/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njk5Mzg5LCJpYXQiOjE3MzY2OTg0ODksImp0aSI6Ijg0NGQyZmNlNTE2NDRiZDc5MjdiOTU5MzBjNGM4Mzk4IiwidXNlcl9pZCI6MX0.7YQxvsQRtrOqyWfudAgAEQlRMIoXuq8EkcumWZRVDjw
 
 ###update tasks
-PUT http://127.0.0.1:8000/api/tasks/4/update/
+PUT http://127.0.0.1:8000/api/tasks/1/update/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njk5Mzg5LCJpYXQiOjE3MzY2OTg0ODksImp0aSI6Ijg0NGQyZmNlNTE2NDRiZDc5MjdiOTU5MzBjNGM4Mzk4IiwidXNlcl9pZCI6MX0.7YQxvsQRtrOqyWfudAgAEQlRMIoXuq8EkcumWZRVDjw
 
 {
   "title": "Work",
   "description": "Got to work",
-   "priority": "high",
-  "start_time": "2025-02-12 09:00:00",  
-  "end_time": "2025-02-15 17:00:00"
+  "priority": "high",
+  "start_time": "2025-02-17 09:00:00",  
+  "end_time": "2025-02-20 17:00:00"
 }
 
 ###delete tasks
-DELETE http://127.0.0.1:8000/api/tasks/4/delete/
+DELETE http://127.0.0.1:8000/api/tasks/3/delete/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njg2MzQ0LCJpYXQiOjE3MzY2ODU0NDQsImp0aSI6ImYxMzA3ZmRjMzU2NTQ4Nzg4YWI4ZjBlMzQzYTgzZjQ3IiwidXNlcl9pZCI6MX0.UwTySIIFTK3hCctP4K0i3f_w-kTi2mx9TGu_XarsMh4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2Njk5Mzg5LCJpYXQiOjE3MzY2OTg0ODksImp0aSI6Ijg0NGQyZmNlNTE2NDRiZDc5MjdiOTU5MzBjNGM4Mzk4IiwidXNlcl9pZCI6MX0.7YQxvsQRtrOqyWfudAgAEQlRMIoXuq8EkcumWZRVDjw
 
